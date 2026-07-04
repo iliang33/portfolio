@@ -68,6 +68,7 @@ main {
     display: flex;
     gap: 16px;
     align-items: center;
+    
 
 }
 
@@ -81,9 +82,9 @@ main {
 }
 
 #skill-icons{
-    max-width: 70%;
+    max-width: 80%;
     display: grid;
-    grid-template: 1fr / 1fr 1fr 1fr 1fr 1fr;
+    grid-template: 1fr 1fr / repeat(auto-fit, minmax(200px, 1fr));
     gap: 64px;
 }
 
@@ -92,6 +93,9 @@ main {
     flex-direction: column;
     align-items: center;
 }
+
+
+/* DO MEDIA QUERIES FOR OTHER BREAKPOINTS LIKE TABLETS*/
 
 @media (width > 600px) and (width <= 1000px) {
     #navbar {
@@ -131,10 +135,6 @@ main {
     }
 
 }
-
-
-
-
 
 a {
     text-decoration: none;
