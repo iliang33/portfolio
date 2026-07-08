@@ -4,6 +4,7 @@
     margin-left: 64px;
     margin-right: 64px;
     color: white;
+    
 }
 
 @font-face {
@@ -11,26 +12,26 @@
     src: url(./fonts/Roboto-VariableFont_wdth\,wght.ttf);
 }
 
+#about, #skills, #projects, #contact {
+    scroll-margin-top: 80px;
+}
 
 #about{
-    border: red solid 3px;
     display: flex;
     flex-direction: column;
     align-items: center;
     
 }
 
-#projects {
-    border: blue solid 3px;
-}
 
-#skills {
-    border: yellow solid 3px;
+
+#skills, #projects {
     display: flex;
     flex-direction: column;
     align-items: center;
     
 }
+
 
 #contact {
     border: green solid 3px;
@@ -72,7 +73,7 @@ main {
 
 }
 
-#about-me-text {
+#about-me-text, p {
     font-size: 28px;
 }
 
@@ -94,16 +95,46 @@ main {
     align-items: center;
 }
 
+#projects-container {
+    display: grid;
+    grid-template: 1fr / repeat(auto-fit, minmax(500px, 1fr));
+    gap: 64px;
+
+}
+.project img, .project p {
+    max-width: 1000px;
+}
+
+.github {
+    display: flex;
+    gap: 10px;
+    border: white solid 3px;
+    border-radius: 20px;
+    max-width: 160px;
+    justify-content: center;
+    align-items: center;
+}
+
+.github img {
+    width: 50px;
+    
+}
+
+
 
 /* DO MEDIA QUERIES FOR OTHER BREAKPOINTS LIKE TABLETS*/
 
-@media (width > 600px) and (width <= 1000px) {
+@media (width > 600px) and (width <= 1200px) {
     #navbar {
         font-size: 20px;
     }
 
-    #about-me-text {
+    #about-me-text, p {
         font-size: 24px;
+    }
+
+    .project img, .project p {
+        max-width: 500px;
     }
 
 }
@@ -113,7 +144,7 @@ main {
         font-size: 12px;
     }
 
-    #about-me-text {
+    #about-me-text, p {
         font-size: 15px;
     }
 
@@ -132,6 +163,10 @@ main {
 
     h1 {
         font-size: 18px;
+    }
+
+    .project img, .project p {
+        max-width: 500px;
     }
 
 }
