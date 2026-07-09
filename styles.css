@@ -68,13 +68,19 @@ main {
 #about div {
     display: flex;
     gap: 16px;
+    justify-content: center;
     align-items: center;
     
 
 }
 
+#about-me-text {
+    max-width: 60%;
+}
+
 #about-me-text, p {
     font-size: 28px;
+    
 }
 
 #about img{
