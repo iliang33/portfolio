@@ -14,7 +14,7 @@
 
 
 main {
-    height: 600vh;
+    height: 550vh;
     display: grid;
     grid-template: 1fr 1fr 3fr 1fr / 1fr;
 
@@ -25,7 +25,7 @@ main {
     flex-direction: column;
     align-items: center;
     scroll-margin-top: 80px;
-    
+    margin-bottom: 64px;
 }
 
 #navbar {
@@ -105,7 +105,7 @@ main {
     
 }
 
-.github img, .live-demo svg {
+.github svg, .live-demo svg {
     width: 50px;
     
 }
@@ -113,6 +113,17 @@ main {
 .project-links {
     display: grid;
     grid-template: 1fr / 1fr 1fr;
+}
+#contact-info svg {
+    width: 50px;
+    height: 50px;
+    
+}
+#contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    
 }
 
 
@@ -135,7 +146,7 @@ main {
 
 @media (width <= 600px) {
     #navbar {
-        font-size: 12px;
+        font-size: 11px;
     }
 
     #about-me-text, p {
