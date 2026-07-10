@@ -69,7 +69,7 @@ main {
 }
 
 #skill-icons{
-    max-width: 80%;
+    max-width: 70%;
     display: grid;
     grid-template: repeat(auto-fit, minmax(200px, 1fr)) / repeat(auto-fit, minmax(200px, 1fr));
     gap: 64px;
