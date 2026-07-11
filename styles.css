@@ -144,7 +144,7 @@ main {
 
 @media (width <= 700px) {
     main {
-        grid-template: 0.2fr 0.8fr 1fr 1.5fr 0.2fr / 1fr;
+        height: 300vh;
     }
     #navbar {
         font-size: 12px;
