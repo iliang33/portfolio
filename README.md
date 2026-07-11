@@ -9,9 +9,6 @@ links, and a contact section with options to reach me
 ## Languages used
 HTML, CSS, JavaScript
 
-## Requirements
-- a modern web browser (Ex: Chrome, Firefox, Safari, Edge)
-
 ## Running the project
 1. Clone the repo (https://github.com/iliang33/portfolio.git)
 2. Open index.html in your browser
